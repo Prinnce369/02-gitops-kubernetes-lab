@@ -1,7 +1,7 @@
 replicaCount: 2
 
 image:
-  repository: gitops-kubernetes-lab
+  helm uninstall gitops-lab -n gitops-labrepository: gitops-kubernetes-lab
   tag: latest
   pullPolicy: Never
 
