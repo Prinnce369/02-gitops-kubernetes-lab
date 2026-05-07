@@ -4,6 +4,7 @@ image:
   repository: gitops-kubernetes-lab
   tag: latest
   pullPolicy: Never
+  
 service:
   type: ClusterIP
   port: 80
