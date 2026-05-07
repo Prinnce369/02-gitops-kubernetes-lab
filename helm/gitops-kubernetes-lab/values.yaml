@@ -1,10 +1,9 @@
 replicaCount: 2
 
 image:
-  helm uninstall gitops-lab -n gitops-labrepository: gitops-kubernetes-lab
+  repository: gitops-kubernetes-lab
   tag: latest
   pullPolicy: Never
-
 service:
   type: ClusterIP
   port: 80
