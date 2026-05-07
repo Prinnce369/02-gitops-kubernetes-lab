@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: repoURL: https://github.com/Prinnce369/gitops-kubernetes-lab.git
+    repoURL: https://github.com/Prinnce369/gitops-kubernetes-lab.git
     targetRevision: main
     path: helm/gitops-kubernetes-lab
   destination:
