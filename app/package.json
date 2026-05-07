@@ -1,0 +1,15 @@
+{
+  "name": "gitops-kubernetes-lab-app",
+  "version": "1.0.0",
+  "description": "Small Node.js API for a GitOps Kubernetes lab",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "check": "node --check src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "helmet": "^8.0.0"
+  }
+}

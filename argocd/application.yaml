@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: gitops-kubernetes-lab
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: repoURL: https://github.com/Prinnce369/gitops-kubernetes-lab.git
+    targetRevision: main
+    path: helm/gitops-kubernetes-lab
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: gitops-lab
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
